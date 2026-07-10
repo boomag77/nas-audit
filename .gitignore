@@ -1,0 +1,11 @@
+*.db
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+tmp/
+state/
+backups/
+secrets/
+.env
+
