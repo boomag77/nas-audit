@@ -41,6 +41,8 @@ The observation-only release will not include:
 - systemd services and timers for Linux deployments.
 - Git for source code, configuration history, compact reports, and documentation.
 
+SQLite is the initial database because it requires no local database service. The database path is configurable so future deployments can revisit the database backend if needed.
+
 ## Safety Model
 
 Configured roots should be exposed read-only whenever possible. For network shares, prefer both a read-only mount and an upstream account that cannot write to the source.
@@ -51,4 +53,4 @@ A file may be marked missing only after a complete successful scan. Failed, inte
 
 Early planning and project setup.
 
-See [docs/roadmap.md](docs/roadmap.md) and [NAS_Audit_Git_Project_Plan.md](NAS_Audit_Git_Project_Plan.md) for the current direction.
+See [docs/roadmap.md](docs/roadmap.md) and [docs/adr/](docs/adr/) for the current direction.

@@ -20,7 +20,7 @@ Goal: scan configured filesystem roots and store inventory metadata safely.
 
 Deliverables:
 
-- Initial configuration format for monitored roots.
+- Initial configuration format for monitored roots and SQLite.
 - SQLite schema and migrations.
 - Scan lifecycle states: pending, running, completed, failed, cancelled.
 - Recursive filesystem traversal.
@@ -100,6 +100,7 @@ Deliverables:
 - Write initial README.
 - Add ADR-0001 for observation-only architecture.
 - Add ADR-0002 for Go, SQLite, and server-rendered HTML.
+- Add ADR-0003 for SQLite as the initial database.
 - Define initial configuration format.
 - Create SQLite schema and migrations.
 - Implement scan lifecycle.

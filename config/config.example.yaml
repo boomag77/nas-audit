@@ -1,0 +1,27 @@
+# NAS Audit example configuration.
+# Copy this file to a local config path and adjust it for your machine.
+
+server:
+  listen_address: "127.0.0.1:8080"
+
+database:
+  driver: sqlite
+  path: ./var/nas-audit.db
+
+scanner:
+  batch_size: 1000
+  follow_symlinks: false
+
+roots:
+  - name: local-test
+    path: ./testdata/sample-root
+    read_only_required: false
+    exclusions:
+      - .DS_Store
+      - Thumbs.db
+      - .git
+      - node_modules
+
+reports:
+  directory: ./reports
+  git_commit_enabled: false
